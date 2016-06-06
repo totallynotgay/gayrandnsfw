@@ -5,12 +5,27 @@
 </head>
 <script>
 
+var words=new Array()
+
+words[0]='http://www.reddit.com/r/shittyrobots'
+words[1]='http://www.reddit.com/r/shittyrobots'
+words[2]='http://www.reddit.com/r/shittyrobots'
+words[3]='http://www.reddit.com/r/shittyrobots'
+words[4]='http://www.reddit.com/r/shittyrobots'
+words[5]='http://www.reddit.com/r/shittyrobots'
+words[6]='http://www.reddit.com/r/shittyrobots'
+var whichword=Math.floor(Math.random()*(words.length))
+document.write(words[whichword])
+
+openPage = function() {
+location.href = words[whichword];
+}
 
 </script>
 <body>
-<button onclick="randomword1.js">Click me for the gay</button>
-<a target="_blank" href="test">Link</a>
-
+<!--<button onclick="randomword1.js">Click me for the gay</button>
+<a target="_blank" href="test">Link</a> !-->
+<a href ="javascript:openPage()">Link  </a>
 
 </body>
 </html>
